@@ -1,4 +1,69 @@
 body {
   background-color: #dadada;
-  font-size: 10px;
+}
+
+h1 {
+  font-family: "Open sans", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding: 5%;
+}
+
+h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 35px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.responsive {
+  height: auto;
+  width: 100%;
+}
+
+.preview{
+  position: relative;
+  text-align: center;
+  color: black;
+  padding-bottom: 25px;
+  flex-grow: 1;
+
+}
+
+.top-left{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+/* large smartphones and tablets */
+@media screen and (min-width: 575px){
+  .preview {
+  width: 100%;
+}
+}
+
+
+/* ipad */
+@media screen and (min-width: 768px) {
+  .preview {
+    width: 40%;
+    padding: 25px;
+}
+
+ /* .responsive {
+   height: auto;
+   width: 40%; */
+/* }
+} */
+
+/* laptops */
+@media screen and (min-width: 991px){
+  .preview {
+    width: 20%;
+}
 }
